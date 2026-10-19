@@ -1,2 +1,2 @@
-# Breath
-Breathwork App
+# MindZen
+Mind-helping App
