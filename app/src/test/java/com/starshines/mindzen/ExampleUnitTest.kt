@@ -1,4 +1,4 @@
-package com.example.mindzen
+package com.starshines.mindzen
 
 import org.junit.Test
 

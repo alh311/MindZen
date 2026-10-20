@@ -1,4 +1,4 @@
-package com.example.mindzen.ui.settings
+package com.starshines.mindzen.ui.settings
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -8,18 +8,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mindzen.ui.theme.MindZenTheme
+import com.starshines.mindzen.ui.theme.MindZenTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Tab1SettingsScreen(
+fun Tab3SettingsScreen(
     onBack: () -> Unit = {}
 ) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {
             TopAppBar(
-                title = { Text("Tab 1 Settings") },
+                title = { Text("Tab 3 Settings") },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
@@ -42,7 +42,7 @@ fun Tab1SettingsScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "This is Tab 1 Settings screen",
+                    text = "This is Tab 3 Settings screen",
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
@@ -52,8 +52,8 @@ fun Tab1SettingsScreen(
 
 @Preview(showBackground = true)
 @Composable
-fun Tab1SettingsScreenPreview() {
+fun Tab3SettingsScreenPreview() {
     MindZenTheme {
-        Tab1SettingsScreen()
+        Tab3SettingsScreen()
     }
 }

@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mindzen"
+    namespace = "com.starshines.mindzen"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.mindzen"
+        applicationId = "com.starshines.mindzen"
         minSdk = 28
         targetSdk = 37
         versionCode = 1

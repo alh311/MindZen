@@ -1,4 +1,4 @@
-package com.example.mindzen.ui.tabs
+package com.starshines.mindzen.ui.tabs
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mindzen.ui.theme.MindZenTheme
+import com.starshines.mindzen.ui.theme.MindZenTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

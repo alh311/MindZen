@@ -1,30 +1,30 @@
-package com.example.mindzen.ui.tabs
+package com.starshines.mindzen.ui.settings
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mindzen.ui.theme.MindZenTheme
+import com.starshines.mindzen.ui.theme.MindZenTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Tab1Screen(
-    onNavigateToSettings: () -> Unit = {}
+fun Tab2SettingsScreen(
+    onBack: () -> Unit = {}
 ) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {
             TopAppBar(
-                title = { Text("Tab 1") },
-                actions = {
-                    IconButton(onClick = onNavigateToSettings) {
+                title = { Text("Tab 2 Settings") },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
                         Icon(
-                            imageVector = Icons.Rounded.Settings,
-                            contentDescription = "Tab 1 Settings"
+                            imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
+                            contentDescription = "Back"
                         )
                     }
                 }
@@ -42,7 +42,7 @@ fun Tab1Screen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "This is Tab 1 view",
+                    text = "This is Tab 2 Settings screen",
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
@@ -52,8 +52,8 @@ fun Tab1Screen(
 
 @Preview(showBackground = true)
 @Composable
-fun Tab1ScreenPreview() {
+fun Tab2SettingsScreenPreview() {
     MindZenTheme {
-        Tab1Screen()
+        Tab2SettingsScreen()
     }
 }

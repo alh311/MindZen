@@ -1,4 +1,4 @@
-package com.example.mindzen.ui.theme
+package com.starshines.mindzen.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

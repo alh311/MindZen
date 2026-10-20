@@ -1,4 +1,4 @@
-package com.example.mindzen.ui.theme
+package com.starshines.mindzen.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -24,8 +24,7 @@ val Typography = Typography(
         letterSpacing = 0.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
+        fontFamily = FontFamily.Medium,
         fontSize = 11.sp,
         lineHeight = 16.sp,
         letterSpacing = 0.5.sp

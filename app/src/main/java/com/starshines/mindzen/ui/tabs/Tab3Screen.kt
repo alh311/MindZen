@@ -1,30 +1,30 @@
-package com.example.mindzen.ui.settings
+package com.starshines.mindzen.ui.tabs
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
+import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mindzen.ui.theme.MindZenTheme
+import com.starshines.mindzen.ui.theme.MindZenTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Tab3SettingsScreen(
-    onBack: () -> Unit = {}
+fun Tab3Screen(
+    onNavigateToSettings: () -> Unit = {}
 ) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {
             TopAppBar(
-                title = { Text("Tab 3 Settings") },
-                navigationIcon = {
-                    IconButton(onClick = onBack) {
+                title = { Text("Tab 3") },
+                actions = {
+                    IconButton(onClick = onNavigateToSettings) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
-                            contentDescription = "Back"
+                            imageVector = Icons.Rounded.Settings,
+                            contentDescription = "Tab 3 Settings"
                         )
                     }
                 }
@@ -42,7 +42,7 @@ fun Tab3SettingsScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "This is Tab 3 Settings screen",
+                    text = "This is Tab 3 view",
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
@@ -52,8 +52,8 @@ fun Tab3SettingsScreen(
 
 @Preview(showBackground = true)
 @Composable
-fun Tab3SettingsScreenPreview() {
+fun Tab3ScreenPreview() {
     MindZenTheme {
-        Tab3SettingsScreen()
+        Tab3Screen()
     }
 }
